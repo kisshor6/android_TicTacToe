@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#19194B"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/baseline_chevron_left_24"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:gravity="center"
+        android:id="@+id/playerFirst"
+        android:layout_above="@id/gridLay"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/firstPlayer"
+            android:layout_width="80dp"
+            android:text="@string/app_name"
+            android:maxLength="6"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            android:fontFamily="@font/baloo_thambi"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/close" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:gravity="center"
+        android:id="@+id/playerSecond"
+        android:layout_above="@id/gridLay"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/secondPlayer"
+            android:layout_width="80dp"
+            android:maxLength="6"
+            android:ellipsize="end"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/baloo_thambi"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/circle" />
+
+    </LinearLayout>
+
+
+    <GridLayout
+        android:id="@+id/gridLay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gridshape"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:columnCount="3">
+
+        <ImageView
+            android:id="@+id/btn1"
+            android:onClick="check"
+            android:background="@drawable/shape"
+            style="@style/ButtonStyle"/>
+
+        <ImageView
+            android:id="@+id/btn2"
+            android:onClick="check"
+            android:background="@drawable/shape"
+            style="@style/ButtonStyle"/>
+
+        <ImageView
+            android:id="@+id/btn3"
+            android:onClick="check"
+            android:background="@drawable/shape"
+            style="@style/ButtonStyle"/>
+
+        <ImageView
+            android:id="@+id/btn4"
+            android:onClick="check"
+            android:background="@drawable/shape"
+            style="@style/ButtonStyle"/>
+
+        <ImageView
+            android:id="@+id/btn5"
+            android:onClick="check"
+            android:background="@drawable/shape"
+            style="@style/ButtonStyle"/>
+
+        <ImageView
+            android:id="@+id/btn6"
+            android:onClick="check"
+            android:background="@drawable/shape"
+            style="@style/ButtonStyle"/>
+
+        <ImageView
+            android:id="@+id/btn7"
+            android:onClick="check"
+            android:background="@drawable/shape"
+            style="@style/ButtonStyle"/>
+
+        <ImageView
+            android:id="@+id/btn8"
+            android:onClick="check"
+            android:background="@drawable/shape"
+            style="@style/ButtonStyle"/>
+
+        <ImageView
+            android:id="@+id/btn9"
+            android:onClick="check"
+            android:background="@drawable/shape"
+            style="@style/ButtonStyle"/>
+
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/winnwe"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/winner"
+        android:layout_marginTop="100dp"
+        android:visibility="gone"
+      android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/winnweName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_below="@id/winnwe"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:fontFamily="@font/baloo_thambi"
+        android:textSize="40sp"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/gameResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="newGame"
+        android:textSize="20sp"
+        android:fontFamily="@font/baloo_thambi"
+        android:padding="10dp"
+        android:layout_margin="40dp"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/white"
+        android:text="@string/newGame"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

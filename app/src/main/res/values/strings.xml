@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+
+    <string name="winner1">Winner is : ${b1}</string>
+    <string name="winner2">Winner is : ${b2}</string>
+    <string name="winner3">Winner is : ${b3}</string>
+    <string name="winner4">Winner is : ${b4}</string>
+    <string name="winner5">"Winner is : ${b5}"</string>
+    <string name="winner6">Winner is : ${b6}</string>
+    <string name="winner7">Winner is : ${b7}</string>
+    <string name="winner8">Winner is : ${b8}</string>
+    <string name="winner9">Winner is : ${b9}</string>
+
+    <string name="draw">Match has been drawn</string>
+    <string name="player_name">Enter Player Names</string>
+    <string name="player1"> Player 1</string>
+    <string name="player2"> Player 2</string>
+    <string name="Start"> Start Game</string>
+    <string name="newGame"> Start New Game</string>
+</resources>
